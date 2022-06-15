@@ -9,11 +9,12 @@ import VideoList from './Components/VideoList';
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 
 function App() {
-
-  // fetch(
-  //   `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`
-  //   .then((response) => response.json())
-  // );
+ fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`)
+    .then((response) => response.json())
+    .then((response) => { console.log(response) })
+    
+    
+ 
 
   return (
     <div className="App">
