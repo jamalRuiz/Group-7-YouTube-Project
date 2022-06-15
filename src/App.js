@@ -1,3 +1,4 @@
+import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import Error from './Components/Error';
@@ -9,10 +10,10 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 
 function App() {
 
-  fetch(
-    `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`
-    .then((response) => response.json())
-  );
+  // fetch(
+  //   `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`
+  //   .then((response) => response.json())
+  // );
 
   return (
     <div className="App">
@@ -20,6 +21,7 @@ function App() {
         <Navbar/>
         <Routes>
           <Route path="/" element={<Home/>}/>
+          <Route path="/about" element={<About/>}/>
           
           </Routes>
       </Router>
