@@ -9,16 +9,17 @@ const [input, setInput] = useState('')
 
     const  handleSubmit = (event) =>{
         event.preventDefault()
-        const {value} = event.target
+        const {value} = event.target;
+      
         setInput(value)
-
+   console.log(input)
     }
 
   return (
-      <form onSubmit={handleSubmit}>
+      <form >
 
           <input type="text" placeholder='Search'/>
-          <button type='submit'>Search</button>
+          <button onClick={handleSubmit} type='submit'>Search</button>
       </form>
   )
 }
