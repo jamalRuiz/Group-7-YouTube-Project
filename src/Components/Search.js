@@ -1,8 +1,5 @@
 import React, {useState} from 'react'
 
-
-
-
 function Search() {
 
 const [input, setInput] = useState('')

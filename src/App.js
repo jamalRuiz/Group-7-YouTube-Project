@@ -8,6 +8,7 @@ import About from './Components/About';
 import VideoList from './Components/VideoList';
 import Search from "./Components/Search";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
+import YouTube from "react-youtube";
 
 // const YOUTUBE_API = "https://youtube.googleapis.com/youtube/v3/search"
 
@@ -28,6 +29,10 @@ const URL = process.env.REACT_APP_API_KEY;
         .then((response) => response.json())
         .then(data => console.log(data))
       }
+
+      useEffect(() =>{
+        getVideos();
+      }, []);
     return (
     <div className="App">
    
