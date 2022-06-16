@@ -11,9 +11,9 @@ import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 function App() {
   const [videos,setVideos]= useState([])
   const getVideos = ()=> {
- fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}`)
+ fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}/video`)
     .then((response) => response.json())
-    .then((response) => {  })
+    .then((response) => console.log(response))
   }
     
  
