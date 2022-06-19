@@ -1,14 +1,14 @@
-<<<<<<< HEAD
-import { React, useState, useEffect } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import Error from "./Components/Error";
-import Navbar from "./Components/Navbar";
-import Home from "./Components/Home";
-import About from "./Components/About";
-import VideoList from "./Components/VideoList";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-=======
+
+// import { React, useState, useEffect } from "react";
+// import logo from "./logo.svg";
+// import "./App.css";
+// import Error from "./Components/Error";
+// import Navbar from "./Components/Navbar";
+// import Home from "./Components/Home";
+// import About from "./Components/About";
+// import VideoList from "./Components/VideoList";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import {React,useState, useEffect } from "react";
 import logo from './logo.svg';
 import './App.css';
@@ -20,7 +20,7 @@ import VideoList from './Components/VideoList';
 import Search from "./Components/Search";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import YouTube from "react-youtube";
->>>>>>> d7f7dde6bec0bc88080d713215df8ca3bc27f0a6
+
 
 // const YOUTUBE_API = "https://youtube.googleapis.com/youtube/v3/search"
 
@@ -34,7 +34,7 @@ import YouTube from "react-youtube";
 //   }
 // }
 function App() {
-<<<<<<< HEAD
+
 
 
   const [videos, setVideos] = useState([])
@@ -52,22 +52,22 @@ function App() {
 
 
   return (
-=======
-const URL = process.env.REACT_APP_API_KEY;
-  const [videos,setVideos]= useState([])
-    const getVideos = ()=> {
-     fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${URL}`)
-        .then((response) => response.json())
-        .then(data => console.log(data))
-      }
 
-      useEffect(() =>{
-        getVideos();
-      }, []);
-    return (
-    <div className="App">
+// const URL = process.env.REACT_APP_API_KEY;
+//   const [videos,setVideos]= useState([])
+//     const getVideos = ()=> {
+//      fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${URL}`)
+//         .then((response) => response.json())
+//         .then(data => console.log(data))
+//       }
+
+//       useEffect(() =>{
+//         getVideos();
+//       }, []);
+//     return (
+//     <div className="App">
    
->>>>>>> d7f7dde6bec0bc88080d713215df8ca3bc27f0a6
+
       <Router>
     <div className="App">
         <Navbar setSearch={setSearch} setMaxResult={setMaxResult}/>
