@@ -2,17 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import About from "./About";
 import Search from "./Search";
+import "./Navbar.css"
 
 function Navbar({ setSearch, setMaxResult }) {
   return (
-    <header>
-      <nav className="navBar">
+    <header className="navbar">
+      <nav>
         <h1>YouYube</h1>
         <h2>
           <Link to="/">Home</Link>
         </h2>
         <h2>
-          <Link to="/about"></Link>
+          <Link to="/about">About</Link>
         </h2>
       </nav>
 
