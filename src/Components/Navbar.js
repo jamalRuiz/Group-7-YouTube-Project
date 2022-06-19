@@ -1,17 +1,27 @@
-import React from 'react'
-import {Link } from "react-router-dom"
-import Search from './Search'
-import "./Navbar.css"
-function Navbar() {
+import React from "react";
+import { Link } from "react-router-dom";
+import About from "./About";
+import Search from "./Search";
+
+function Navbar({ setSearch, setMaxResult }) {
   return (
-    <div className='navbar'> 
-    <h1>YouTube</h1>
-    <Search/>
-    <br></br>
-    <Link to="/"><button>Home</button></Link>
-    <Link to="/about"><button>About</button></Link>
-    </div>
-  )
+    <header>
+      <nav className="navBar">
+        <h1>YouYube</h1>
+        <h2>
+          <Link to="/">Home</Link>
+        </h2>
+        <h2>
+          <Link to="/about"></Link>
+        </h2>
+      </nav>
+
+      <aside>
+        <Search setSearch={setSearch} setMaxresult={setMaxResult} />
+      </aside>
+    </header>
+  );
+
 }
 
-export default Navbar
+export default Navbar;

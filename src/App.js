@@ -1,3 +1,14 @@
+
+// import { React, useState, useEffect } from "react";
+// import logo from "./logo.svg";
+// import "./App.css";
+// import Error from "./Components/Error";
+// import Navbar from "./Components/Navbar";
+// import Home from "./Components/Home";
+// import About from "./Components/About";
+// import VideoList from "./Components/VideoList";
+// import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+
 import {React,useState, useEffect } from "react";
 import logo from './logo.svg';
 import './App.css';
@@ -9,6 +20,7 @@ import VideoList from './Components/VideoList';
 import Search from "./Components/Search";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import YouTube from "react-youtube";
+
 
 // const YOUTUBE_API = "https://youtube.googleapis.com/youtube/v3/search"
 
@@ -22,31 +34,53 @@ import YouTube from "react-youtube";
 //   }
 // }
 function App() {
-const URL = process.env.REACT_APP_API_KEY;
-  const [videos,setVideos]= useState([])
-    const getVideos = ()=> {
-     fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${URL}`)
-        .then((response) => response.json())
-        .then(data => console.log(data))
-      }
 
-      useEffect(() =>{
-        getVideos();
-      }, []);
-    return (
-    <div className="App">
+
+
+  const [videos, setVideos] = useState([])
+  const [search, setSearch] = useState('')
+  const [maxResult, setMaxResult] = useState(4)
+
+  useEffect(()=> {
+  
+    fetch(
+      `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}&q=${search}&maxResults=${maxResult}`
+    )
+      .then((responce) => responce.json())
+      .then ((data) => setVideos(data.items))
+    }, [search, maxResult])
+
+
+  return (
+
+// const URL = process.env.REACT_APP_API_KEY;
+//   const [videos,setVideos]= useState([])
+//     const getVideos = ()=> {
+//      fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${URL}`)
+//         .then((response) => response.json())
+//         .then(data => console.log(data))
+//       }
+
+//       useEffect(() =>{
+//         getVideos();
+//       }, []);
+//     return (
+//     <div className="App">
    
-      <Router>
-        <Navbar/>
-        <Routes>
-          <Route path="/" element={<Home/>}/>
-          <Route path="/about" element={<About/>}/>
-          
-          </Routes>
-      </Router>
 
+      <Router>
+    <div className="App">
+        <Navbar setSearch={setSearch} setMaxResult={setMaxResult}/>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/videos" element={<VideoList videos={videos}/>}/>
+        </Routes>
     </div>
+      </Router>
   );
 }
 
 export default App;
+
+// you have to npm install react-youtube for youTube packages then import to VideoList
