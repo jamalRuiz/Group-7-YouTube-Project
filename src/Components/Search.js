@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -40,6 +41,27 @@ function Search({ setSearch, setMaxresult }) {
         </select>
 
         <button type="submit">Search</button>
+=======
+import React, {useState} from 'react'
+
+function Search() {
+
+const [input, setInput] = useState('')
+
+    const  handleSubmit = (event) =>{
+        event.preventDefault()
+        const {value} = event.target;
+      
+        setInput(value)
+   console.log(input)
+    }
+
+  return (
+      <form >
+
+          <input type="text" placeholder='Search'/>
+          <button onClick={handleSubmit} type='submit'>Search</button>
+>>>>>>> d7f7dde6bec0bc88080d713215df8ca3bc27f0a6
       </form>
     </div>
   );
