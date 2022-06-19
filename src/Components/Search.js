@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -47,6 +46,7 @@ function Search({ setSearch, setMaxresult }) {
 
 {/* import React, {useState} from 'react'
 
+
 function Search() {
 
 const [input, setInput] = useState('')
@@ -60,8 +60,7 @@ const [input, setInput] = useState('')
     }
 
   return (
-      <form >
-
+      <form className='search'>
           <input type="text" placeholder='Search'/>
           <button onClick={handleSubmit} type='submit'>Search</button>
 

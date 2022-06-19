@@ -21,6 +21,7 @@ function Navbar({ setSearch, setMaxResult }) {
       </aside>
     </header>
   );
+
 }
 
 export default Navbar;
