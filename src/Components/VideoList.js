@@ -1,5 +1,5 @@
 import {React,useState, useEffect } from "react";
-
+import "./VideoList.css"
 // import React from 'react'
 
 function VideoList() {
@@ -21,9 +21,9 @@ function VideoList() {
 
 
   return (
-    <div>
+    <div className="videolist">
     {videos.map(
-      
+     
     )}
     VideoList</div>
   )

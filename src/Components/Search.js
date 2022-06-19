@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-
+import "./Search.css"
 function Search() {
 
 const [input, setInput] = useState('')
@@ -13,8 +13,7 @@ const [input, setInput] = useState('')
     }
 
   return (
-      <form >
-
+      <form className='search'>
           <input type="text" placeholder='Search'/>
           <button onClick={handleSubmit} type='submit'>Search</button>
       </form>

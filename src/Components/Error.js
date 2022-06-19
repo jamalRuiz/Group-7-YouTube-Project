@@ -1,8 +1,10 @@
 import React from 'react'
-
+import "./Error.css"
 function Error() {
   return (
-    <div>Error</div>
+    <section className='error'>
+        <p>Error 404: Video not found</p>
+    </section>
   )
 }
 
