@@ -9,3 +9,8 @@ section {
     border: 2px solid pink;
     padding: 50px;
 }
+
+img {
+    width: 250px;
+    height: 250px;
+}

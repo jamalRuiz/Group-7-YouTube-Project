@@ -29,8 +29,8 @@ function About() {
       </section>
 
       <section className='khaleed'>
-        <img alt='khaleed' />
-        <p>Description goes here</p>
+        <img src="../Khaleed Uddin img.png" alt='khaleed' />
+        <p>My name is Khaleed Uddin. I just graduated with a business degree from City College of New York and I am looking to expand my skills, especially in tech world. My hobbies include sleeping, working out, watching shows, and hanging with friends.</p>
         <a href="https://github.com/Khaleed-Uddin"> Visit my Github! </a>
         <br></br>
         <a href="https://www.linkedin.com/in/khaleed-uddin/"> Visit my LinkedIn! </a>
