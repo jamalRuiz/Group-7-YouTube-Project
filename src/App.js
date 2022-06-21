@@ -21,18 +21,6 @@ import Search from "./Components/Search";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
 import YouTube from "react-youtube";
 
-
-// const YOUTUBE_API = "https://youtube.googleapis.com/youtube/v3/search"
-
-// export async function getServerSideProps(){
-//   const response = await fetch(`${YOUTUBE_API}?key=${process.env.REACT_APP_API_KEY}`)
-//   const data = await response.json();
-//   return {
-//     props: {
-//       data
-//     }
-//   }
-// }
 function App() {
 
 
@@ -44,7 +32,7 @@ function App() {
   useEffect(()=> {
   
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}&q=${search}&maxResults=${maxResult}`
+      `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}&q=${search}&maxResults=${maxResult}&part=snippet`
     )
       .then((responce) => responce.json())
       .then ((data) => setVideos(data.items))
@@ -52,21 +40,6 @@ function App() {
 
 
   return (
-
-// const URL = process.env.REACT_APP_API_KEY;
-//   const [videos,setVideos]= useState([])
-//     const getVideos = ()=> {
-//      fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${URL}`)
-//         .then((response) => response.json())
-//         .then(data => console.log(data))
-//       }
-
-//       useEffect(() =>{
-//         getVideos();
-//       }, []);
-//     return (
-//     <div className="App">
-   
 
       <Router>
     <div className="App">

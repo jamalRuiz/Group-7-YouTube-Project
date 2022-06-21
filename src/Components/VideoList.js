@@ -1,34 +1,21 @@
-import {React,useState, useEffect } from "react";
+import { React, useState, useEffect } from "react";
 import YouTube from "react-youtube";
-import "./VideoList.css"
+import "./VideoList.css";
 
-function VideoList({videos}) {
-
-
-
-//   const [videos, setVideos]= useState([])
-
-//   const getVideos = ()=> {
-//  fetch(`https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}/video`)
-//     .then((response) => response.json())
-//     .then((response) => {
-//         getVideos(response);
-//       });
-//   };
-    
-//  useEffect(() =>{
-//    getVideos();
-//  }, []);
-
-
-
-
+function VideoList({ videos }) {
   return (
     <div>
-    {videos.map((video) => <YouTube videoId={video.id.videoId}/>)}
-
-    VideoList</div>
-  )
+      {videos.map((video) => {
+        return (
+          <>
+            <h3>{video.snippet.title}</h3>
+            <h4>{video.snippet.description}</h4>
+            <YouTube videoId={video.id.videoId} />;
+          </>
+        );
+      })}
+    </div>
+  );
 }
 
-export default VideoList
+export default VideoList;
