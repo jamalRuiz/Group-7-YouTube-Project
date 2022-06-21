@@ -1,3 +1,5 @@
+
+import {React,useState, useEffect } from "react";
 import logo from './logo.svg';
 import './App.css';
 import Error from './Components/Error';
@@ -11,7 +13,23 @@ import YouTube from "react-youtube";
 import VideoCard from "./Components/VideoCard";
 
 function App() {
+
+  const [videos, setVideos] = useState([])
+  const [search, setSearch] = useState('')
+  const [maxResult, setMaxResult] = useState(4)
+
+  useEffect(()=> {
+  
+    fetch(
+      `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}&q=${search}&maxResults=${maxResult}&part=snippet`
+    )
+      .then((responce) => responce.json())
+      .then ((data) => setVideos(data.items))
+    }, [search, maxResult])
+
+
   return (
+      <Router>
     <div className="App">
         <Navbar setSearch={setSearch} setMaxResult={setMaxResult}/>
         <Routes>
@@ -21,7 +39,10 @@ function App() {
           <Route path="/videos/:id" element={<VideoCard/>}/>
         </Routes>
     </div>
+      </Router>
   );
 }
 
 export default App;
+
+// you have to npm install react-youtube for youTube packages then import to VideoList

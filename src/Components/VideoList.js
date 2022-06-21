@@ -4,7 +4,6 @@ import {Link} from "react-router-dom"
 import "./VideoList.css";
 
 function VideoList({ videos }) {
-  debugger
   return (
     <div>
       {videos.map((video) => {

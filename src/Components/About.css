@@ -1,0 +1,16 @@
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: auto;
+    padding-top: 10px;
+}
+
+section {
+    border: 2px solid pink;
+    padding: 50px;
+}
+
+img {
+    width: 250px;
+    height: 250px;
+}

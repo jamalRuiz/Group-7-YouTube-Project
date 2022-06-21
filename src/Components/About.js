@@ -10,6 +10,7 @@ function About() {
         <a href="github.com"> https://github.com/zaneahmed1 </a>
         <br></br>
         <a href="linkedin.com"> www.linkedin.com/in/zaneahmed </a>
+
       </section>
 
       <section className='jamal'>
