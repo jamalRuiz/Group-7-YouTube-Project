@@ -20,7 +20,7 @@ function App() {
   useEffect(()=> {
   
     fetch(
-      `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}&q=${search}&maxResults=${maxResult}`
+      `https://youtube.googleapis.com/youtube/v3/search?key=${process.env.REACT_APP_API_KEY}&q=${search}&maxResults=${maxResult}&part=snippet`
     )
       .then((responce) => responce.json())
       .then ((data) => setVideos(data.items))
