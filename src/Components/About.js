@@ -23,7 +23,7 @@ function About() {
 
       <section className='kenyetta'>
         <img alt='kenyetta' />
-        <p>My name is Kenyetta Griffin and I have 15+ years experience in social services. Currently pursuing certification as a Full Stack Developer. Spunky, charasmatic, and upbeat problem solver who collects crystals. Good Vibes and No Compiler errors is a Good day to me. My pride and joy is my son Tristan, who goes to Clara Barton H.S </p>
+        <p>My name is Kenyetta Griffin and I am a Program Manager with 15+ years experience in social services. Currently pursuing certification as a Full Stack Developer. Spunky, charasmatic, and upbeat problem solver who collects crystals. Good Vibes and No Compiler errors is a Good day to me. My pride and joy is my son Tristan, who goes to Clara Barton H.S </p>
         <a href="https://github.com/PursuitMadeMe"> Visit my Github!</a>
         <br></br>
         <a href="https://www.linkedin.com/in/kenyetta-griffin-968471166/"> Visit my LinkedIn!</a>
