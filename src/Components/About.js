@@ -23,15 +23,15 @@ function About() {
 
       <section className='kenyetta'>
         <img alt='kenyetta' />
-        <p>Description goes here</p>
-        <a href="github.com"> add your github url</a>
+        <p>My name is Kenyetta Griffin and I am a Program Manager with 15+ years experience in social services. Currently pursuing certification as a Full Stack Web Developer. Spunky, charasmatic, and upbeat problem solver who collects crystals. Good Vibes and No Compiler errors is a Good day to me. My pride and joy is my son Tristan, who goes to Clara Barton H.S </p>
+        <a href="https://github.com/PursuitMadeMe"> Visit my Github!</a>
         <br></br>
-        <a href="linkedin.com"> add your linked in url</a>
+        <a href="https://www.linkedin.com/in/kenyetta-griffin-968471166/"> Visit my LinkedIn!</a>
       </section>
 
       <section className='khaleed'>
         <img src="../Khaleed Uddin img.png" alt='khaleed' />
-        <p>My name is Khaleed Uddin. I just graduated with a business degree from City College of New York and I am looking to expand my skills, especially in tech world. My hobbies include sleeping, working out, watching shows, and hanging with friends.</p>
+        <p>My name is Khaleed Uddin. I just graduated with a business degree from City College of New York and I am looking to expand my skills, especially in tech world. My ho"bbies include sleeping, working out, watching shows, and hanging with friends.</p>
         <a href="https://github.com/Khaleed-Uddin"> Visit my Github! </a>
         <br></br>
         <a href="https://www.linkedin.com/in/khaleed-uddin/"> Visit my LinkedIn! </a>
