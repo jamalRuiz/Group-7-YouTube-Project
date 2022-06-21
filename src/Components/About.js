@@ -4,12 +4,13 @@ function About() {
   return (
     <div className='about'>
 
-      <section className='zane'>
+<section className='zane'>
         <img alt='zane'/>
-        <p>Description goes here</p>
-        <a href="github.com"> add your github url </a>
+        <p>Hello! My name is Zane and I use she/they pronouns! I am an aspiring software engineer and Pursuit Fellow. I have a passion for coding and inclusivity in tech spaces for woman of color like myself.</p>
+        <a href="github.com"> https://github.com/zaneahmed1 </a>
         <br></br>
-        <a href="linkedin.com"> add your linked in url</a>
+        <a href="linkedin.com"> www.linkedin.com/in/zaneahmed </a>
+
       </section>
 
       <section className='jamal'>
