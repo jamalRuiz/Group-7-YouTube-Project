@@ -1,10 +1,15 @@
-import React from 'react'
-import VideoList from './VideoList'
-import "./VideoCard.css"
+import React from "react";
+import "./VideoCard.css";
+import { useParams } from "react-router-dom";
+import YouTube from "react-youtube";
+
 function VideoCard() {
-  return (
-    <div>VideoCard</div>
-  )
+  const {id} = useParams();
+  debugger;
+
+  return (<div>
+    <YouTube videoId={id} />
+    </div>)
 }
 
-export default VideoCard
+export default VideoCard;
