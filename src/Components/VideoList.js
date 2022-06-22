@@ -1,5 +1,4 @@
-import { React, useState, useEffect } from "react";
-import YouTube from "react-youtube";
+import React from "react";
 import {Link} from "react-router-dom"
 import "./VideoList.css";
 
