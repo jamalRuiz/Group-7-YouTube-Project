@@ -7,11 +7,11 @@ function Navbar({ setSearch, setMaxResult }) {
   return (
     <header className="navbar">
       <nav>
-        <h1>YouTube</h1>
-        <h2>
+        <h1>YouYube</h1>
+        <h2 className="Navlink">
           <Link to="/">Home</Link>
         </h2>
-        <h2>
+        <h2 className="Navlink">
           <Link to="/about">About</Link>
         </h2>
       </nav>

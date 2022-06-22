@@ -23,7 +23,7 @@ setInput2("")
 }
 
 
-  return (<div>
+  return (<div className="video">
     <YouTube videoId={id} />
   
     <form onSubmit={handleSubmit}>

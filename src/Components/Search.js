@@ -16,13 +16,13 @@ function Search({ setSearch, setMaxresult }) {
   };
 
   return (
-    <div>
+    <div className="search">
       <form onSubmit={handleSubmit}>
         <input
           onChange={(e) => setInput(e.target.value)}
           value={input}
           type="text"
-          placeholder="Search"
+          placeholder="Search..."
         />
         <select onChange={(e) => setInputMaxResult(e.target.value)}>
           <option selected value={4}>
