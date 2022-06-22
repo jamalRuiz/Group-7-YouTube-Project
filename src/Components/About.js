@@ -12,7 +12,7 @@ function About() {
         </p>
         <a href="https://github.com/zaneahmed1"> Visit my Github! </a>
         <br></br>
-        <a href="www.linkedin.com/in/zaneahmed"> Visit my LinkedIn! </a>
+        <a href="https://www.linkedin.com/in/zaneahmed"> Visit my LinkedIn! </a>
       </section>
 
       <section className="jamal">
@@ -26,7 +26,7 @@ function About() {
         </p>
         <a href="https://github.com/jamalRuiz"> Visit my Github!</a>
         <br></br>
-        <a href="www.linkedin.com/in/jamal-ruiz-473a641a6">
+        <a href="https://www.linkedin.com/in/jamal-ruiz-473a641a6">
           Visit my LinkedIn!
         </a>
       </section>
