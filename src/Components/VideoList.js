@@ -4,7 +4,7 @@ import "./VideoList.css";
 
 function VideoList({ videos }) {
   return (
-    <div>
+    <div className="videolist">
       {videos.map((video) => {
         return (
           <>

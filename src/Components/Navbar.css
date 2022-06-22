@@ -1,8 +1,12 @@
 .navbar{
-    height: 200px;
-    width: auto;
+    height: 20%;
+    width: 100%;
     background-color: red;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 h1 {
     color: white;
 }
+
