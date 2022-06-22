@@ -22,7 +22,7 @@ function About() {
       </section>
 
       <section className='kenyetta'>
-        <img alt='kenyetta' />
+        <img src="../Kenyetta_Griffin.jpg" alt='kenyetta' />
         <p>My name is Kenyetta Griffin and I am a Program Manager with 15+ years experience in social services. Currently pursuing certification as a Full Stack Web Developer. Spunky, charasmatic, and upbeat problem solver who collects crystals. Good Vibes and No Compiler errors is a Good day to me. My pride and joy is my son Tristan, who goes to Clara Barton H.S </p>
         <a href="https://github.com/PursuitMadeMe"> Visit my Github!</a>
         <br></br>
