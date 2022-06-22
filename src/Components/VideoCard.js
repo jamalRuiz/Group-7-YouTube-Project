@@ -10,11 +10,10 @@ function VideoCard({videos}) {
   const [input2, setInput2] = useState("")
   debugger;
 
-// const vid = videos.find((video) => video.id.videoId === id)
-
-// if(!vid){
-//   return <Error/>
-// }
+const vid = videos.find((video) => video.id.videoId === id)
+if(!vid){
+  return <Error/>
+}
 
 
 const handleSubmit = (event) => {
