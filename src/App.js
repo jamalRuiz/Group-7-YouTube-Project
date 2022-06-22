@@ -1,5 +1,5 @@
 
-import {React,useState, useEffect } from "react";
+import React, {useState, useEffect } from "react";
 import logo from './logo.svg';
 import './App.css';
 import Error from './Components/Error';
@@ -26,10 +26,6 @@ function App() {
       .then((responce) => responce.json())
       .then ((data) => setVideos(data.items))
     }, [search, maxResult])
-    .catch((error) => {
-      alert(error);
-
-
   return (
       <Router>
     <div className="App">
