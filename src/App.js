@@ -37,6 +37,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/videos" element={<VideoList videos={videos}/>}/>
           <Route path="/videos/:id" element={<VideoCard/>}/>
+          <Route path="*" element={<Error/>}/>
         </Routes>
     </div>
       </Router>
