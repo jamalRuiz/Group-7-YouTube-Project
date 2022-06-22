@@ -5,11 +5,11 @@ function About() {
     <div className='about'>
 
 <section className='zane'>
-        <img alt='zane'/>
+        <img src="../Zane_Ahmed.jpeg" alt='zane'/>
         <p>Hello! My name is Zane and I use she/they pronouns! I am an aspiring software engineer and Pursuit Fellow. I have a passion for coding and inclusivity in tech spaces for woman of color like myself.</p>
-        <a href="github.com"> https://github.com/zaneahmed1 </a>
+        <a href="https://github.com/zaneahmed1"> Visit my Github! </a>
         <br></br>
-        <a href="linkedin.com"> www.linkedin.com/in/zaneahmed </a>
+        <a href="www.linkedin.com/in/zaneahmed"> Visit my LinkedIn! </a>
 
       </section>
 

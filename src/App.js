@@ -23,8 +23,6 @@ function App() {
       .then((responce) => responce.json())
       .then ((data) => setVideos(data.items))
     }, [search, maxResult])
-
-
   return (
       <Router>
     <div className="App">
