@@ -1,15 +1,12 @@
 
-import React, {useState, useEffect } from "react";
-import logo from './logo.svg';
+import React,{useState, useEffect } from "react";
 import './App.css';
 import Error from './Components/Error';
 import Navbar from './Components/Navbar';
 import Home from './Components/Home';
 import About from './Components/About';
 import VideoList from './Components/VideoList';
-import Search from "./Components/Search";
 import {BrowserRouter as Router, Route, Routes} from "react-router-dom"
-import YouTube from "react-youtube";
 import VideoCard from "./Components/VideoCard";
 
 function App() {
