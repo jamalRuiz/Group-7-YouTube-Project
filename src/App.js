@@ -26,6 +26,8 @@ function App() {
       .then((responce) => responce.json())
       .then ((data) => setVideos(data.items))
     }, [search, maxResult])
+    .catch((error) => {
+      alert(error);
 
 
   return (
